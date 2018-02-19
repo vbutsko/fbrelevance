@@ -6,7 +6,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>fbrelevance-client</artifactId>
+    <artifactId>fbrelevanceclient</artifactId>
     <packaging>war</packaging>
     <name>fbrelevance-client Maven Webapp</name>
     <url>http://maven.apache.org</url>
@@ -25,13 +25,14 @@
         </dependency>
         <dependency>
             <groupId>by.expertsoft</groupId>
-            <artifactId>fbrelevance-core</artifactId>
+            <artifactId>fbrelevancecore</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>${javax.servlet.servlet-api.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
@@ -44,4 +45,18 @@
             <version>${javax.servlet.jstl.version}</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <finalName>fbrelevanceclient</finalName>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.tomcat.maven</groupId>
+                    <artifactId>tomcat7-maven-plugin</artifactId>
+                    <version>2.2</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
 </project>
