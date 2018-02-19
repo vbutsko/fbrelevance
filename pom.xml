@@ -5,9 +5,13 @@
   <groupId>by.expertsoft</groupId>
   <artifactId>fbrelevance</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <modules>
+    <module>fbrelevance-core</module>
+    <module>fbrelevance-client</module>
+  </modules>
+  <packaging>pom</packaging>
 
-  <name>fbstartup</name>
+  <name>fbrelevance</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -23,4 +27,17 @@
     </dependency>
   </dependencies>
 
+  <build>
+    <finalName>fbrelevance</finalName>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.tomcat.maven</groupId>
+          <artifactId>tomcat7-maven-plugin</artifactId>
+          <version>2.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+  
 </project>
