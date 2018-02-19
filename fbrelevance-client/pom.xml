@@ -10,4 +10,38 @@
     <packaging>war</packaging>
     <name>fbrelevance-client Maven Webapp</name>
     <url>http://maven.apache.org</url>
+
+    <properties>
+        <javax.servlet.servlet-api.version>3.1.0</javax.servlet.servlet-api.version>
+        <javax.servlet.jsp-api.version>2.3.1</javax.servlet.jsp-api.version>
+        <javax.servlet.jstl.version>1.2</javax.servlet.jstl.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>by.expertsoft</groupId>
+            <artifactId>fbrelevance-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${javax.servlet.servlet-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>javax.servlet.jsp-api</artifactId>
+            <version>${javax.servlet.jsp-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${javax.servlet.jstl.version}</version>
+        </dependency>
+    </dependencies>
 </project>
