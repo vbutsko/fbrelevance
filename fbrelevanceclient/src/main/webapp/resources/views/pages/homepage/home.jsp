@@ -16,7 +16,7 @@
 <![endif]-->
 <div class="container-fluid">
     <h1>
-        Hello, World !
+        Home Page
     </h1>
 </div>
 
