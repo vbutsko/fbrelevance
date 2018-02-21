@@ -4,6 +4,5 @@
 <%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form"%>
 
 <div class="container-fluid">
-    <h1>Facebook relevance. Test application</h1>
-    <br/>
+    <h3>Facebook Relevance API</h3>
 </div>

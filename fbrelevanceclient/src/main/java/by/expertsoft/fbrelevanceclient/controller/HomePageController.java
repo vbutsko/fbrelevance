@@ -10,7 +10,7 @@ public class HomePageController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String getHomePage() {
-        return "home";
+        return "homePage";
     }
 
 }

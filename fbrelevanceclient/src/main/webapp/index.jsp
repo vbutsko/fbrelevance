@@ -1,1 +1,0 @@
-<h2>HELLO FROM INDEX PAGE</h2>
