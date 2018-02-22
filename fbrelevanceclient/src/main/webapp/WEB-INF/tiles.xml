@@ -15,13 +15,13 @@
 
     <!--  HomePage -->
     <definition name="homePage" extends="base.definition">
-        <put-attribute name="title" value="Welcome" />
+        <put-attribute name="title" value="home" />
         <put-attribute name="body" value="/WEB-INF/views/pages/homepage/home.jsp" />
     </definition>
 
     <!--  LoginPage -->
     <definition name="loginPage" extends="base.definition">
-        <put-attribute name="title" value="Welcome" />
+        <put-attribute name="title" value="login" />
         <put-attribute name="body" value="/WEB-INF/views/pages/loginpage/login.jsp" />
     </definition>
 
